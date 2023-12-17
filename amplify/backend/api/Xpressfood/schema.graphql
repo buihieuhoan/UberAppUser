@@ -16,6 +16,7 @@ type Dish @model @auth(rules: [{allow: public}]) {
   restaurantID: ID! @index(name: "byRestaurant")
   _version: Int!
   _lastChangedAt: AWSDateTime!
+  _deleted: Boolean!
 }
 
 
@@ -25,6 +26,7 @@ type OrderDish @model @auth(rules: [{allow: public}]) {
   orderID: ID! @index(name: "byOrder")
   _version: Int!
   _lastChangedAt: AWSDateTime!
+  _deleted: Boolean!
   Dish: Dish @hasOne
 }
 
@@ -36,6 +38,7 @@ type Order @model @auth(rules: [{allow: public}]) {
   status: OrderStatus!
   _version: Int!
   _lastChangedAt: AWSDateTime!
+  _deleted: Boolean!
   OrderDishes: [OrderDish] @hasMany(indexName: "byOrder", fields: ["id"])
 }
 
@@ -45,6 +48,7 @@ type BasketDish @model @auth(rules: [{allow: public}]) {
   basketID: ID! @index(name: "byBasket")
   _version: Int!
   _lastChangedAt: AWSDateTime!
+  _deleted: Boolean!
   Dish: Dish @hasOne
 }
 
@@ -55,6 +59,7 @@ type Basket @model @auth(rules: [{allow: public}]) {
   restaurantID: ID! @index(name: "byRestaurant")
   _version: Int!
   _lastChangedAt: AWSDateTime!
+  _deleted: Boolean!
 }
 
 type User @model @auth(rules: [{allow: public}]) {
@@ -68,6 +73,7 @@ type User @model @auth(rules: [{allow: public}]) {
   lng: Float!
   _version: Int!
   _lastChangedAt: AWSDateTime!
+  _deleted: Boolean!
 }
 
 type Restaurant @model @auth(rules: [{allow: public}]) {
@@ -83,6 +89,7 @@ type Restaurant @model @auth(rules: [{allow: public}]) {
   lng: Float!
   _version: Int!
   _lastChangedAt: AWSDateTime!
+  _deleted: Boolean!
   Baskets: [Basket] @hasMany(indexName: "byRestaurant", fields: ["id"])
   Dishes: [Dish] @hasMany(indexName: "byRestaurant", fields: ["id"])
 }
