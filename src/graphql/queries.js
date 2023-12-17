@@ -12,9 +12,9 @@ export const getDish = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
+      
+      
+      
       __typename
     }
   }
@@ -35,9 +35,9 @@ export const listDishes = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -68,9 +68,9 @@ export const syncDishes = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -103,9 +103,9 @@ export const dishesByRestaurantID = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -129,16 +129,16 @@ export const getOrderDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
+      
+      
+      
       orderDishDishId
       __typename
     }
@@ -157,9 +157,9 @@ export const listOrderDishes = /* GraphQL */ `
         orderID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         orderDishDishId
         __typename
       }
@@ -188,9 +188,9 @@ export const syncOrderDishes = /* GraphQL */ `
         orderID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         orderDishDishId
         __typename
       }
@@ -221,9 +221,9 @@ export const orderDishesByOrderID = /* GraphQL */ `
         orderID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         orderDishDishId
         __typename
       }
@@ -251,9 +251,9 @@ export const getOrder = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       total
@@ -265,9 +265,9 @@ export const getOrder = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
+      
+      
+      
       orderRestaurantId
       __typename
     }
@@ -287,9 +287,9 @@ export const listOrders = /* GraphQL */ `
         status
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         orderRestaurantId
         __typename
       }
@@ -319,9 +319,9 @@ export const syncOrders = /* GraphQL */ `
         status
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         orderRestaurantId
         __typename
       }
@@ -353,9 +353,9 @@ export const ordersByUserID = /* GraphQL */ `
         status
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         orderRestaurantId
         __typename
       }
@@ -380,16 +380,16 @@ export const getBasketDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
+      
+      
+      
       basketDishDishId
       __typename
     }
@@ -408,9 +408,9 @@ export const listBasketDishes = /* GraphQL */ `
         basketID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         basketDishDishId
         __typename
       }
@@ -439,9 +439,9 @@ export const syncBasketDishes = /* GraphQL */ `
         basketID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         basketDishDishId
         __typename
       }
@@ -472,9 +472,9 @@ export const basketDishesByBasketID = /* GraphQL */ `
         basketID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         basketDishDishId
         __typename
       }
@@ -497,9 +497,9 @@ export const getBasket = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
+      
+      
+      
       __typename
     }
   }
@@ -517,9 +517,9 @@ export const listBaskets = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -547,9 +547,9 @@ export const syncBaskets = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -579,9 +579,9 @@ export const basketsByUserID = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -611,9 +611,9 @@ export const basketsByRestaurantID = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -643,9 +643,9 @@ export const getUser = /* GraphQL */ `
       lng
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
+      
+      
+      
       __typename
     }
   }
@@ -666,9 +666,9 @@ export const listUsers = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -699,9 +699,9 @@ export const syncUsers = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -735,9 +735,9 @@ export const getRestaurant = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
+      
+      
+      
       __typename
     }
   }
@@ -762,9 +762,9 @@ export const listRestaurants = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
@@ -799,9 +799,9 @@ export const syncRestaurants = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        
+        
+        
         __typename
       }
       nextToken
