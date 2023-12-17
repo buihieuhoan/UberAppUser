@@ -12,9 +12,9 @@ export const onCreateDish = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -30,9 +30,9 @@ export const onUpdateDish = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -48,9 +48,9 @@ export const onDeleteDish = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -72,16 +72,16 @@ export const onCreateOrderDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        
-        
-        
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       orderDishDishId
       __typename
     }
@@ -104,16 +104,16 @@ export const onUpdateOrderDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        
-        
-        
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       orderDishDishId
       __typename
     }
@@ -136,16 +136,16 @@ export const onDeleteOrderDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        
-        
-        
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       orderDishDishId
       __typename
     }
@@ -169,9 +169,9 @@ export const onCreateOrder = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        
-        
-        
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       total
@@ -183,9 +183,9 @@ export const onCreateOrder = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       orderRestaurantId
       __typename
     }
@@ -209,9 +209,9 @@ export const onUpdateOrder = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        
-        
-        
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       total
@@ -223,9 +223,9 @@ export const onUpdateOrder = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       orderRestaurantId
       __typename
     }
@@ -249,9 +249,9 @@ export const onDeleteOrder = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        
-        
-        
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       total
@@ -263,9 +263,9 @@ export const onDeleteOrder = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       orderRestaurantId
       __typename
     }
@@ -288,16 +288,16 @@ export const onCreateBasketDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        
-        
-        
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       basketDishDishId
       __typename
     }
@@ -320,16 +320,16 @@ export const onUpdateBasketDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        
-        
-        
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       basketDishDishId
       __typename
     }
@@ -352,16 +352,16 @@ export const onDeleteBasketDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        
-        
-        
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       basketDishDishId
       __typename
     }
@@ -380,9 +380,9 @@ export const onCreateBasket = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -400,9 +400,9 @@ export const onUpdateBasket = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -420,9 +420,9 @@ export const onDeleteBasket = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -448,9 +448,9 @@ export const onCreateUser = /* GraphQL */ `
       lng
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -476,9 +476,9 @@ export const onUpdateUser = /* GraphQL */ `
       lng
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -504,9 +504,9 @@ export const onDeleteUser = /* GraphQL */ `
       lng
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -538,9 +538,9 @@ export const onCreateRestaurant = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -572,9 +572,9 @@ export const onUpdateRestaurant = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
@@ -606,9 +606,9 @@ export const onDeleteRestaurant = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      
-      
-      
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
