@@ -1,0 +1,24 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-xpressfood-staging-04232-authRole",
+      "UnauthRoleArn": "arn:aws:iam::197636534562:role/amplify-xpressfood-staging-04232-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::197636534562:role/amplify-xpressfood-staging-04232-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-xpressfood-staging-04232-deployment",
+      "UnauthRoleName": "amplify-xpressfood-staging-04232-unauthRole",
+      "StackName": "amplify-xpressfood-staging-04232",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:197636534562:stack/amplify-xpressfood-staging-04232/55f090a0-9887-11ee-adbc-068dc42212eb",
+      "AmplifyAppId": "d1lble0zp9vr9"
+    },
+    "categories": {
+      "auth": {
+        "UberEats": {},
+        "Xpressfood": {}
+      },
+      "api": {
+        "Xpressfood": {}
+      }
+    }
+  }
+}
