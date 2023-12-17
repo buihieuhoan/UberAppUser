@@ -15,9 +15,9 @@ export const createDish = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -36,9 +36,9 @@ export const updateDish = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -57,9 +57,9 @@ export const deleteDish = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -82,16 +82,16 @@ export const createOrderDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
         _deleted
-        _lastChangedAt
+        
+        
         __typename
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       orderDishDishId
       __typename
     }
@@ -115,16 +115,16 @@ export const updateOrderDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
         _deleted
-        _lastChangedAt
+        
+        
         __typename
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       orderDishDishId
       __typename
     }
@@ -148,16 +148,16 @@ export const deleteOrderDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
         _deleted
-        _lastChangedAt
+        
+        
         __typename
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       orderDishDishId
       __typename
     }
@@ -184,9 +184,9 @@ export const createOrder = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        _version
         _deleted
-        _lastChangedAt
+        
+        
         __typename
       }
       total
@@ -198,9 +198,9 @@ export const createOrder = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       orderRestaurantId
       __typename
     }
@@ -227,9 +227,9 @@ export const updateOrder = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        _version
         _deleted
-        _lastChangedAt
+        
+        
         __typename
       }
       total
@@ -241,9 +241,9 @@ export const updateOrder = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       orderRestaurantId
       __typename
     }
@@ -270,9 +270,9 @@ export const deleteOrder = /* GraphQL */ `
         lng
         createdAt
         updatedAt
-        _version
         _deleted
-        _lastChangedAt
+        
+        
         __typename
       }
       total
@@ -284,9 +284,9 @@ export const deleteOrder = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       orderRestaurantId
       __typename
     }
@@ -310,16 +310,16 @@ export const createBasketDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
         _deleted
-        _lastChangedAt
+        
+        
         __typename
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       basketDishDishId
       __typename
     }
@@ -343,16 +343,16 @@ export const updateBasketDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
         _deleted
-        _lastChangedAt
+        
+        
         __typename
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       basketDishDishId
       __typename
     }
@@ -376,16 +376,16 @@ export const deleteBasketDish = /* GraphQL */ `
         restaurantID
         createdAt
         updatedAt
-        _version
         _deleted
-        _lastChangedAt
+        
+        
         __typename
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       basketDishDishId
       __typename
     }
@@ -407,9 +407,9 @@ export const createBasket = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -430,9 +430,9 @@ export const updateBasket = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -453,9 +453,9 @@ export const deleteBasket = /* GraphQL */ `
       restaurantID
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -484,9 +484,9 @@ export const createUser = /* GraphQL */ `
       lng
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -515,9 +515,9 @@ export const updateUser = /* GraphQL */ `
       lng
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -546,9 +546,9 @@ export const deleteUser = /* GraphQL */ `
       lng
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -581,9 +581,9 @@ export const createRestaurant = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -616,9 +616,9 @@ export const updateRestaurant = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }
@@ -651,9 +651,9 @@ export const deleteRestaurant = /* GraphQL */ `
       }
       createdAt
       updatedAt
-      _version
       _deleted
-      _lastChangedAt
+      
+      
       __typename
     }
   }

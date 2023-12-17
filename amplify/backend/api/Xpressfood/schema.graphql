@@ -23,6 +23,8 @@ type OrderDish @model @auth(rules: [{allow: public}]) {
   id: ID!
   quantity: Int!
   orderID: ID! @index(name: "byOrder")
+  _version: Int!
+  _lastChangedAt: AWSDateTime!
   Dish: Dish @hasOne
 }
 
@@ -32,6 +34,8 @@ type Order @model @auth(rules: [{allow: public}]) {
   Restaurant: Restaurant @hasOne
   total: Float!
   status: OrderStatus!
+  _version: Int!
+  _lastChangedAt: AWSDateTime!
   OrderDishes: [OrderDish] @hasMany(indexName: "byOrder", fields: ["id"])
 }
 
@@ -39,6 +43,8 @@ type BasketDish @model @auth(rules: [{allow: public}]) {
   id: ID!
   quantity: Int!
   basketID: ID! @index(name: "byBasket")
+  _version: Int!
+  _lastChangedAt: AWSDateTime!
   Dish: Dish @hasOne
 }
 
@@ -47,6 +53,8 @@ type Basket @model @auth(rules: [{allow: public}]) {
   BasketDishes: [BasketDish] @hasMany(indexName: "byBasket", fields: ["id"])
   userID: ID! @index(name: "byUser")
   restaurantID: ID! @index(name: "byRestaurant")
+  _version: Int!
+  _lastChangedAt: AWSDateTime!
 }
 
 type User @model @auth(rules: [{allow: public}]) {
@@ -58,6 +66,8 @@ type User @model @auth(rules: [{allow: public}]) {
   Orders: [Order] @hasMany(indexName: "byUser", fields: ["id"])
   Baskets: [Basket] @hasMany(indexName: "byUser", fields: ["id"])
   lng: Float!
+  _version: Int!
+  _lastChangedAt: AWSDateTime!
 }
 
 type Restaurant @model @auth(rules: [{allow: public}]) {
@@ -71,9 +81,9 @@ type Restaurant @model @auth(rules: [{allow: public}]) {
   address: String!
   lat: Float!
   lng: Float!
-  Baskets: [Basket] @hasMany(indexName: "byRestaurant", fields: ["id"])
-  Dishes: [Dish] @hasMany(indexName: "byRestaurant", fields: ["id"])
   _version: Int!
   _lastChangedAt: AWSDateTime!
+  Baskets: [Basket] @hasMany(indexName: "byRestaurant", fields: ["id"])
+  Dishes: [Dish] @hasMany(indexName: "byRestaurant", fields: ["id"])
 }
  
